@@ -1,4 +1,4 @@
-package com.egencia.springmvc.poc.service;
+package com.github.ecruciani.springmvcpoc.service;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -6,8 +6,8 @@ import java.util.Set;
 
 import org.springframework.stereotype.Service;
 
-import com.egencia.springmvc.poc.domain.Reservation;
-import com.egencia.springmvc.poc.exception.ReservationNotAvailableException;
+import com.github.ecruciani.springmvcpoc.domain.Reservation;
+import com.github.ecruciani.springmvcpoc.exception.ReservationNotAvailableException;
 
 @Service
 public class ReservationServiceImpl implements ReservationService {

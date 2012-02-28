@@ -1,19 +1,26 @@
-package com.egencia.springmvc.poc.domain;
+package com.github.ecruciani.springmvcpoc.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlSeeAlso;
 
 @XmlRootElement
-public class Room implements Serializable {
+@XmlSeeAlso(Room.class)
+public class Hotel implements Serializable {
+
 
 	private static final long serialVersionUID = 1L;
 
 	private String name;
+
+	private List<Room> rooms = new ArrayList<Room>();
 	
-	public Room(){}
+	public Hotel(){}
 	
-	public Room(String name){
+	public Hotel(String name){
 		this.name = name;
 	}
 
@@ -23,6 +30,18 @@ public class Room implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public void addRoom(Room room) {
+		this.rooms .add(room);
+	}
+	
+	public List<Room> getRooms() {
+		return rooms;
+	}
+
+	public void setRooms(List<Room> rooms) {
+		this.rooms = rooms;
 	}
 	
 	@Override
@@ -41,7 +60,7 @@ public class Room implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Room other = (Room) obj;
+		Hotel other = (Hotel) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;
@@ -49,4 +68,5 @@ public class Room implements Serializable {
 			return false;
 		return true;
 	}
+
 }

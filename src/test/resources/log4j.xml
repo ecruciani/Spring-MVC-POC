@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.egencia.web">
+	<logger name="com.github.ecruciani.springmvcpoc.web">
 		<level value="info" />
 	</logger>
 	

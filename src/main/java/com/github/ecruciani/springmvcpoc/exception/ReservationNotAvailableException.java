@@ -1,4 +1,4 @@
-package com.egencia.springmvc.poc.exception;
+package com.github.ecruciani.springmvcpoc.exception;
 
 import java.util.Date;
 

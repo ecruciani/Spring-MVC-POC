@@ -1,4 +1,4 @@
-package com.egencia.springmvc.poc.web.controller;
+package com.github.ecruciani.springmvcpoc.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.egencia.springmvc.poc.domain.Hotel;
-import com.egencia.springmvc.poc.service.HotelService;
+import com.github.ecruciani.springmvcpoc.domain.Hotel;
+import com.github.ecruciani.springmvcpoc.service.HotelService;
 
 @Controller
 public class HotelController {

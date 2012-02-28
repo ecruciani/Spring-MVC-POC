@@ -1,4 +1,4 @@
-package com.egencia.springmvc.poc.web.controller;
+package com.github.ecruciani.springmvcpoc.web.controller;
 
 import javax.validation.Valid;
 
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.egencia.springmvc.poc.domain.Reservation;
-import com.egencia.springmvc.poc.exception.ReservationNotAvailableException;
-import com.egencia.springmvc.poc.service.ReservationService;
+import com.github.ecruciani.springmvcpoc.domain.Reservation;
+import com.github.ecruciani.springmvcpoc.exception.ReservationNotAvailableException;
+import com.github.ecruciani.springmvcpoc.service.ReservationService;
 
 @Controller
 @RequestMapping("/reservationForm") 

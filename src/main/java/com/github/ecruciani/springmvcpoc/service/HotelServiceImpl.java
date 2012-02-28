@@ -1,9 +1,9 @@
-package com.egencia.springmvc.poc.service;
+package com.github.ecruciani.springmvcpoc.service;
 
 import org.springframework.stereotype.Service;
 
-import com.egencia.springmvc.poc.domain.Hotel;
-import com.egencia.springmvc.poc.domain.Room;
+import com.github.ecruciani.springmvcpoc.domain.Hotel;
+import com.github.ecruciani.springmvcpoc.domain.Room;
 
 @Service
 public class HotelServiceImpl implements HotelService {

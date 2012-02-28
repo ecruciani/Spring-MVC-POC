@@ -16,7 +16,7 @@
 					<ul>
 						<li><a href="${rc.contextPath}/hello">Hello World</a></li>
 						<li><a href="${rc.contextPath}/hotel/123"><@spring.message "topbar.hotels" /></a></li>
-						<li><a href="${rc.contextPath}/reservation"><@spring.message "topbar.reservation" /></a></li>
+						<li><a href="${rc.contextPath}/reservationForm"><@spring.message "topbar.reservation" /></a></li>
 					</ul>
 				</div>
 			</div>

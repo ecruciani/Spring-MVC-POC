@@ -1,7 +1,9 @@
-package com.egencia.springmvc.poc.domain;
+package com.github.ecruciani.springmvcpoc.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -11,6 +13,7 @@ public class Reservation implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@DateTimeFormat(style = "S-")
+	@NotNull
 	private Date date;
 	
 	@Length(min = 3, max = 20)

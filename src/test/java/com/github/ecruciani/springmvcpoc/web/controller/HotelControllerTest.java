@@ -1,4 +1,4 @@
-package com.egencia.web.controller;
+package com.github.ecruciani.springmvcpoc.web.controller;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -13,10 +13,10 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.ui.ExtendedModelMap;
 
-import com.egencia.springmvc.poc.domain.Hotel;
-import com.egencia.springmvc.poc.domain.Room;
-import com.egencia.springmvc.poc.service.HotelService;
-import com.egencia.springmvc.poc.web.controller.HotelController;
+import com.github.ecruciani.springmvcpoc.domain.Hotel;
+import com.github.ecruciani.springmvcpoc.domain.Room;
+import com.github.ecruciani.springmvcpoc.service.HotelService;
+import com.github.ecruciani.springmvcpoc.web.controller.HotelController;
 
 @RunWith(MockitoJUnitRunner.class)
 public class HotelControllerTest {
